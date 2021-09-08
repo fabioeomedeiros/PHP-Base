@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <title>Cadastro Simples</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Cadastro Simples</h1>
+       
+        <form action="arquivo.php" method="GET">
+            <div id="code">
+                <fieldset><legend>Pessoa</legend>
+                    <label for="id-nome">Nome:</label>
+                    <input id="id-nome" name="nm-nome" type="text" placeholder="Digite seu nome"><br>
+                    <label for="id-nasc">Ano de nascimneto:</label>
+                    <input id="id-nasc" name="nm-nasc" type="number" min=1870><br>
+                    <fieldset><legend>Sexo</legend>
+                        <input id="id-masc" name="nm-sexo" type="radio" value="homem" checked>
+                        <label for="id-masc">Masculino</label>
+                        <input id="id-femi" name="nm-sexo" type="radio" value="mulher">
+                        <label for="id-femi">Feminino</label>
+                        <input id="id-inde" name="nm-sexo" type="radio" value="um bicho-pau Australiano">
+                        <label for="id-inde">Indefinido</label>
+                    </fieldset>
+                </fieldset>
+            </div>
+            <input class="enviar" type="submit" value="Enviar">
+        </form>
+       
+    </div>
+</body>
+</html>
