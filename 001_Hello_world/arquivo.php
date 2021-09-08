@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../imagens/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
-    <script type="text/javascript" src="../js/script.js"></script>
-    <title>Document</title>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <title>Hello World</title>
 </head>
 <body>
-    
     <div id="container">
-
+        <h1>Hello World</h1>
+        <div id="code">
+            <?php
+                echo "Hello World!!!";
+            ?>
+        </div>
+        <a class="back" href="javascript:history.back()">Voltar</a>
     </div>
-
 </body>
 </html>
