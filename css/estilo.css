@@ -65,10 +65,21 @@ fieldset input {
 }
 
 div#code {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #f7f7f7;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    background-color: red;
+    padding: 10px;
+    margin:10px 0px;
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+div#display {
+    background-color: red;
+    padding: 10px;
+    margin:10px 0px;
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
 .back, .enviar {
