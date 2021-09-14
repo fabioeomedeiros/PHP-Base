@@ -14,7 +14,7 @@
         <h1>Título</h1>
         <div id="display">
             <?php
-
+                echo "x";
             ?>
         </div>
         <a class="back" href="javascript:history.back()">Voltar</a>

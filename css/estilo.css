@@ -59,8 +59,9 @@ fieldset input {
     margin: 7px 5px;
 }
 
-div#display {
+form div#display {
     background-color: red;
+    padding: 5px;
 }
 
 .back, .enviar {
