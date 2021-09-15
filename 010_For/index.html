@@ -7,15 +7,46 @@
     <link rel="shortcut icon" type="image/x-icon" href="../imagens/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/estilo2.css">
     <!-- <script type="text/javascript" src="script.js"></script> -->
-    <title>Título</title>
+    <title>For</title>
 </head>
 <body>
     <div id="container">
-        <h1>Título</h1>
+        <h1>For</h1>
        
         <form action="arquivo.php" method="GET">
             <fieldset>
-                <legend>Campo</legend>
+                <legend>Contagem</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for='id-i'>Início:</label>
+                        </td>
+                        <td>
+                            <input id='id-i' name='nm-i' type='number'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for='id-f'>Fim:</label>
+                        </td>
+                        <td>
+                            <input id='id-f' name='nm-f' type='number'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for='id-s'>Passo:</label>
+                        </td>
+                        <td>
+                            <input id='id-s' name='nm-s' type='number' min='0'>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Tabuada</legend>
+                <label for='id-num'>Número:</label>
+                <input id='id-num' name='nm-num' type='number' min='-10' max='10'>
             </fieldset>
             <div id="display">Aguarde...</div>
             <input class="enviar" type="submit" value="Enviar">

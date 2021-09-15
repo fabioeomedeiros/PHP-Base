@@ -8,19 +8,53 @@
     <link rel="stylesheet" type="text/css" href="../css/estilo2.css">
     <!-- <script type="text/javascript" src="script.js"></script> -->
 
-    <title>Título</title>
+    <style>
+        td {
+            padding:0px 5px;
+        }
+    </style>
+
+    <title>For</title>
 </head>
 <body>
     <div id="container">
-        <h1>Título</h1>
+        <h1>For</h1>
         <form>
             <fieldset>
-                <legend>Campo</legend>
+                <legend>Contagem</legend>
             </fieldset>
             <div id="display">
                 <?php
-                    echo "x";
+                    $inicio = isset($_GET['nm-i'])?$_GET['nm-i']:0;
+                    $fim = isset($_GET['nm-f'])?$_GET['nm-f']:0;
+                    $passo = isset($_GET['nm-s'])?$_GET['nm-s']:0;
+                    if ($inicio <= $fim) {
+                        for ($i = $inicio; $i <= $fim; $i += $passo) {
+                            echo "$i ";
+                        }
+                    } else {
+                        for ($i = $inicio; $i >= $fim; $i -= $passo) {
+                            echo "$i ";
+                        }
+                    }
                 ?>
+                <br>
+                <?php
+                    $n = isset($_GET['nm-num'])?$_GET['nm-num']:0;
+                    echo "$n <br/>";
+                    echo "<table>";
+                    for ($i = 0; $i<=10; $i++) {
+                        $p = $i * $n;
+                        echo "<tr>
+                                <td> $i </td>
+                                <td> x </td>
+                                <td> $n </td>
+                                <td> = </td>
+                                <td> $p </td>
+                            <tr/>";
+                    }
+                    echo "</table>";
+                ?> 
             </div>
             <a class="back" href="javascript:history.back()">Voltar</a>
         </form>
