@@ -15,9 +15,17 @@
        
         <form action="arquivo.php" method="GET">
             <fieldset>
-                <legend>Campo</legend>
+                <legend>Notas</legend>
+                <label for='id-nome'>Nome do Aluno:</label>
+                <input id='id-nome' name='nm-nome' type='text'>
+                <br>
+                <label for='id-n1'>Nota 1:</label>
+                <input id='id-n1' name='nm-n1' type='number' min='0' max='10' step='0.5'>
+                <br>
+                <label for='id-n2'>Nota 2:</label>
+                <input id='id-n2' name='nm-n2' type='number' min='0' max='10' step='0.5'>
             </fieldset>
-            <div id="display">Aguarde...</div>
+            <div id="display">Lance os dados...</div>
             <input class="enviar" type="submit" value="Enviar">
         </form>
        

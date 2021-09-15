@@ -7,15 +7,24 @@
     <link rel="shortcut icon" type="image/x-icon" href="../imagens/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/estilo2.css">
     <!-- <script type="text/javascript" src="script.js"></script> -->
-    <title>Título</title>
+    <title>Operações</title>
 </head>
 <body>
     <div id="container">
-        <h1>Título</h1>
+        <h1>Operações</h1>
        
         <form action="arquivo.php" method="GET">
             <fieldset>
-                <legend>Campo</legend>
+                <legend>Escolha</legend>
+                <label for='id-num'>Número: </label>
+                <input id='id-num' name='nm-num' type='number' >
+                <br>
+                <input id='id-raiz' name='oper' type='radio' value='1' checked> 
+                <label for='id-raiz'>Raiz quadrada</label>
+                <input id='id-dobro' name='oper' type='radio' value='2'> 
+                <label for='id-dobro'>Dobro</label>
+                <input id='id-cubo' name='oper' type='radio' value='3'> 
+                <label for='id-cubo'>Cubo</label>
             </fieldset>
             <div id="display">Aguarde...</div>
             <input class="enviar" type="submit" value="Enviar">

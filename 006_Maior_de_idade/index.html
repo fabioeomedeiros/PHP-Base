@@ -7,17 +7,22 @@
     <link rel="shortcut icon" type="image/x-icon" href="../imagens/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/estilo2.css">
     <!-- <script type="text/javascript" src="script.js"></script> -->
-    <title>Título</title>
+    <title>Maior de Idade</title>
 </head>
 <body>
     <div id="container">
-        <h1>Título</h1>
+        <h1>Maior de Idade</h1>
        
         <form action="arquivo.php" method="GET">
             <fieldset>
-                <legend>Campo</legend>
+                <legend>Verificação</legend>
+                <label for='id-nome'>Nome: </label>
+                <input id='id-nome' name='nm-nome' type='text' placeholder='Escreva seu nome'>
+                <br>
+                <label for='id-nasc'>Ano de Nascimento: </label>
+                <input id='id-nasc' name='nm-nasc' type='number' min="1870" placeholder='4 dígitos'>
             </fieldset>
-            <div id="display">Aguarde...</div>
+            <div id="display">Preencha os dados</div>
             <input class="enviar" type="submit" value="Enviar">
         </form>
        
