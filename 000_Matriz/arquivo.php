@@ -19,7 +19,9 @@
             </fieldset>
             <div id="display">
                 <?php
-                    echo "x";
+                    $nome = "   Fabio Medeiros    ";
+                    // $nome = trim($nome);
+                    echo $nome;
                 ?>
             </div>
             <a class="back" href="javascript:history.back()">Voltar</a>
